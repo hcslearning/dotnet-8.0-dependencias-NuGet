@@ -1,0 +1,27 @@
+= Proyecto ejemplo .NET 8.0 usando dependencias con NuGet 
+:sectnums:
+
+== Creación proyecto ejemplo
+
+[source, bash]
+....
+dotnet new console
+....
+
+== Agrega paquete NuGet
+
+En este ejemplo se agrega Newtonsoft.Json.
+
+[source, bash]
+....
+dotnet add package Newtonsoft.Json 
+....
+
+Esto agrega la dependencia en el archivo *csproj*:
+
+[source, xml]
+....
+<ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+</ItemGroup>
+....
